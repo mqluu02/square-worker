@@ -8,13 +8,13 @@ A professional, modular booking API gateway that interfaces with Square's appoin
 
 ## Features
 
-- ** High Performance**: Built on Cloudflare Workers for global edge deployment
-- ** Modular Architecture**: Clean separation of concerns with services, middleware, and utilities
-- ** Security First**: Bearer token authentication and input validation
-- ** Type Safety**: Full TypeScript support with strict mode enabled
-- ** Well Tested**: Comprehensive test suite with Vitest
-- ** Well Documented**: Complete API documentation and examples
-- ** Developer Tools**: ESLint, Prettier, Husky pre-commit hooks
+- **High Performance**: Built on Cloudflare Workers for global edge deployment
+- **Modular Architecture**: Clean separation of concerns with services, middleware, and utilities
+- **Security First**: Bearer token authentication and input validation
+- **Type Safety**: Full TypeScript support with strict mode enabled
+- **Well Tested**: Comprehensive test suite with Vitest
+- **Well Documented**: Complete API documentation and examples
+- **Developer Tools**: ESLint, Prettier, Husky pre-commit hooks
 
 ## Tech Stack
 
