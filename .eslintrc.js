@@ -1,0 +1,40 @@
+module.exports = {
+  root: true,
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    ecmaVersion: 2021,
+    sourceType: 'module',
+  },
+  plugins: ['@typescript-eslint', 'prettier'],
+  extends: [
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
+    'prettier',
+    'plugin:prettier/recommended',
+  ],
+  env: {
+    es2021: true,
+    node: true,
+    worker: true,
+  },
+  rules: {
+    'prettier/prettier': 'error',
+    '@typescript-eslint/no-unused-vars': 'error',
+    '@typescript-eslint/explicit-function-return-type': 'off',
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
+    '@typescript-eslint/no-explicit-any': 'warn',
+    'no-console': 'warn',
+    'prefer-const': 'error',
+    'no-var': 'error',
+  },
+  ignorePatterns: [
+    'node_modules/',
+    'dist/',
+    '.wrangler/',
+    'worker-configuration.d.ts',
+    'test/',
+    '*.config.*',
+    '.github/',
+    '*.d.ts',
+  ],
+};

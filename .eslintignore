@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+.wrangler/
+
+# Config files
+*.config.*
+vitest.config.mts
+wrangler.jsonc
+tsconfig.json
+
+# Type definitions
+*.d.ts
+worker-configuration.d.ts
+
+# Test files
+test/
+
+# GitHub workflows
+.github/
+
+# Other
+.env*
+.dev.vars

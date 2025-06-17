@@ -4,12 +4,25 @@
  */
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
-	"name": "square-worker",
+	"name": "square-booking-api",
 	"main": "src/index.ts",
 	"compatibility_date": "2025-04-27",
 	"observability": {
 		"enabled": true
+	},
+
+	/**
+	 * Environment Variables (for development)
+	 * Note: Use wrangler secret for production secrets
+	 * https://developers.cloudflare.com/workers/wrangler/configuration/#environment-variables
+	 */
+	"vars": {
+		"ENVIRONMENT": "development",
+		"SQUARE_API_VERSION": "2025-04-16",
+		"DEFAULT_TIMEZONE": "America/Edmonton",
+		"SQUARE_LOCATION_ID": "L3P45AD9XDBTG"
 	}
+
 	/**
 	 * Smart Placement
 	 * Docs: https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement
@@ -24,12 +37,10 @@
 	 */
 
 	/**
-	 * Environment Variables
-	 * https://developers.cloudflare.com/workers/wrangler/configuration/#environment-variables
-	 */
-	// "vars": { "MY_VARIABLE": "production_value" },
-	/**
 	 * Note: Use secrets to store sensitive data.
+	 * Production secrets should be set with:
+	 * wrangler secret put SQUARE_ACCESS_TOKEN
+	 * wrangler secret put AUTH_TOKEN
 	 * https://developers.cloudflare.com/workers/configuration/secrets/
 	 */
 
